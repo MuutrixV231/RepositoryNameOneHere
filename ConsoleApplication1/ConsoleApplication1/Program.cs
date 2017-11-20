@@ -115,16 +115,16 @@ namespace ConsoleApplication1
 
         private double _height = 1000;
         private double _width = 50;
-        private string _color;
-        private string _material;
+        private string _color = "Pink";
+        private string _material = "Cotton";
         private double _thicc = 0.1;
 
         public Paper()
         {
             this.Height = 1000;
             this.Width = 50;
-            this.Color = "Pink";
-            this.Material = "Cotton";
+            this.YourColorHere = "Pink";
+            this.YourMaterialHere = "Cotton";
             this.Thicc = 0.05;
             
 
@@ -134,8 +134,8 @@ namespace ConsoleApplication1
         {
             this.Height = Height;
             this.Width = Width;
-            this.Color = Color;
-            this.Material = Material;
+            this.YourColorHere = Color;
+            this.YourMaterialHere = Material;
             this.Thicc = Thicc;
             
 
@@ -148,9 +148,9 @@ namespace ConsoleApplication1
         {
             get
             {
-                return "  Paper's height is " + this.Height + "cm, and width is " + Width +
-                "cm.\n  It's color is [" + Color + "] and Material is " + Material +
-                ".\n  Most importantly, it's thiccness is " + Thicc + "\n\n";
+                return "  Paper's height is " + this.Height + "cm, and width is " + this.Width +
+                "cm.\n  It's color is [" + this.YourColorHere + "] and Material is " + this.YourMaterialHere +
+                ".\n  Most importantly, it's thiccness is " + this.Thicc + "\n\n";
             }
         }
         
